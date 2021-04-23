@@ -12,14 +12,15 @@ int main()
 
    while (playerAlive) {
         int lineCount = 0;
-        while (mazeOpened == false) {
+        if (mazeOpened == false) {
             cout << "Choose the maze's number: "; cin >> mazeNum;
-
         }
+
         string line;
         ifstream myfile("MAZE_" + mazeNum + ".txt");
         if (myfile.is_open())
         {
+
             while (myfile.good())
             {
                 getline(myfile, line);
