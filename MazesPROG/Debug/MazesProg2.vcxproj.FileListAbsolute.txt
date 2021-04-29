@@ -1,2 +1,0 @@
-D:\GitHubRepositories\MazesPROG\MazesPROG\Debug\MazesProg2.exe
-D:\GitHubRepositories\MazesPROG\MazesPROG\Debug\MazesProg2.pdb

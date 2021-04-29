@@ -1,0 +1,4 @@
+D:\GitHubRepositories\MazesPROG\MazesPROG\Debug\MazesProg2.exe
+D:\GitHubRepositories\MazesPROG\MazesPROG\Debug\MazesProg2.pdb
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\Debug\MazesProg2.exe
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\Debug\MazesProg2.pdb
