@@ -7,7 +7,7 @@ int main()
 {
     bool playerAlive = true;
     bool mazeOpened = false;
-    string mazeNum;
+    
     string playerMove;
 
     while (playerAlive) {
@@ -42,4 +42,11 @@ int main()
     }
 
     return 0;
+}
+
+void MazeSelect() {
+    string mazeNum;
+    bool mazeNotOpen = true;
+
+
 }
