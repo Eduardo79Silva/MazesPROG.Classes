@@ -13,11 +13,7 @@ void display(vector<vector<char>>& maze) {
         }
         cout << endl;
     } 
-
-
-
 }
-
 
 void MazeOpened() {
     string mazeNum;
@@ -96,14 +92,87 @@ void MazeOpened() {
    
 }
 
-void Play() {
-    
+bool RobotsAlive(const vector<string>& robots) {
+    for (int i = 1; i < robots.size(); i++) {
+        if (robots[i] != "r") {
+            return true;
+        }
+    }
+    return false;
+}
+
+void MazeClear(vector<vector<char>>& maze) {
+    for (int i = 0; i < maze.size(); i++) {
+        for (int j = 0; j < maze[i].size(); j++) {
+            if (maze[i][j] == 'R' || maze[i][j] == 'H') {
+                maze[i][j] = ' ';
+            }
+        }
+    }
+    return
+}
+
+void MoveRobots(string& player, vector<vector<char>>& maze, vector<string>& robots, unsigned mazeNum) {
+    int playerX, playerY, robotX, robotY;
+
+}
+
+void Play(vector<vector<char>>& maze, vector<string>& robots, string playerPos, unsigned int mazeNum) {
+    while (playerPos != "h" && RobotsAlive(robots) && !cin.eof()) {
+        display(maze);
+        MazeClear(maze);
+        //PlayerInput();
+        //MoveRobots();
+    }
+}
+
+void MainMenu() {
+    unsigned short answer;
+    bool error = false;
+
+    do{
+        cout <<
+            "----------------" << endl <<
+            "|  MAIN  MENU  |" << endl <<
+            "|Rules: 1      |" << endl <<
+            "|Play: 2       |" << endl <<
+            "|Exit: 0       |" << endl <<
+            "----------------" << endl;
+        cin >> answer;
+        if (cin.eof()) {
+            return;
+        }
+        if (!cin.good()) {
+            cout << "Sadly that's not an option. Please choose another one."<<endl;
+            cin.clear();
+            cin.ignore(INT_MAX, '\n');
+            error = true;
+
+        }
+        else if(answer == 1)
+        {
+            cout << ""; //insert rules here
+            MainMenu();
+            error = false;
+        }
+        else if (answer == 2) {
+            MazeOpened();
+            error = false;
+        }
+        else if (answer == 0) {
+            error = false;
+            return;
+        }
+        else {
+            cout << "Sadly that's not an option. Please choose another one." << endl;
+        }
+    } while (error);
 }
 
 
 int main()
 {
-    MazeOpened();
+    MainMenu();
 
     return 0;
 }
