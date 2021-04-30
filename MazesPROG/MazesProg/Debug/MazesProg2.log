@@ -1,4 +1,8 @@
 ﻿  MazesPROG.cpp
-C:\Users\eduar\OneDrive\Documentos\GitHub\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(9,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\eduar\OneDrive\Documentos\GitHub\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(10,27): warning C4018: '<': signed/unsigned mismatch
-  MazesProg2.vcxproj -> C:\Users\eduar\OneDrive\Documentos\GitHub\MazesPROG\MazesPROG\MazesProg\Debug\MazesProg2.exe
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(9,23): warning C4018: '<': signed/unsigned mismatch
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(16,23): warning C4018: '<': signed/unsigned mismatch
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(17,27): warning C4018: '<': signed/unsigned mismatch
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(25,23): warning C4018: '<': signed/unsigned mismatch
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(26,27): warning C4018: '<': signed/unsigned mismatch
+D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(35,23): warning C4018: '<': signed/unsigned mismatch
+  MazesProg2.vcxproj -> D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\Debug\MazesProg2.exe
