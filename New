@@ -1,0 +1,246 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
+#include <chrono>
+using namespace std;
+using namespace std::chrono;
+
+int main()
+{
+    MazeOpened();
+
+    return 0;
+}
+
+void Play() {
+
+    auto start = high_resolution_clock::now();
+
+
+    auto stop = high_resolution_clock::now();
+
+
+    auto duration = duration_cast<microseconds>(stop - start);
+
+}
+
+void player_input() {
+
+    string key;
+    string playerPos;
+    string pl = "H";
+
+    while (pl == "H") {
+
+        cout << "Where do you want to go? "; cin >> key;
+
+        if (key == "q") {
+
+            if (maze[i - 1][j + 1] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i - 1][j + 1] == "R") || (maze[i - 1][j + 1] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i - 1][j + 1];
+
+            }
+        }
+
+        if (key == "w") {
+
+            if (maze[i][j + 1] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i][j + 1] == "R") || (maze[i][j + 1] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i][j + 1];
+
+            }
+
+        }
+
+        if (key == "e") {
+
+            if (maze[i + 1][j + 1] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i + 1][j + 1] == "R") || (maze[i + 1][j + 1] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i + 1][j + 1];
+
+            }
+
+        }
+
+        if (key == "a") {
+
+            if (maze[i - 1][j] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i - 1][j] == "R") || (maze[i - 1][j] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i - 1][j];
+
+            }
+
+        }
+
+        if (key == "s") {
+
+            continue;
+
+        }
+
+        if (key == "d") {
+
+            if (maze[i + 1][j] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i + 1][j] == "R") || (maze[i + 1][j] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i + 1][j];
+
+            }
+
+        }
+
+        if (key == "z") {
+
+            if (maze[i - 1][j - 1] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i - 1][j - 1] == "R") || (maze[i - 1][j - 1] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i - 1][j - 1];
+
+            }
+
+        }
+
+        if (key == "x") {
+
+            if (maze[i][j - 1] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i][j - 1] == "R") || (maze[i][j - 1] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i][j - 1];
+
+            }
+
+        }
+
+        if (key == "c") {
+
+            if (maze[i + 1][j - 1] == "r") {
+
+                cout << "That position is invalid. \n"; cout << "Please try again.";
+
+            }
+
+            else if ((maze[i + 1][j - 1] == "R") || (maze[i + 1][j - 1] == "*")) {
+
+                pl = "h";
+
+            }
+
+            else {
+
+                playerPos == maze[i + 1][j - 1];
+
+            }
+
+        }
+
+        GameOver();
+
+    }
+
+}
+
+
+void GameOver() {
+
+    string inp;
+    string name;
+
+    cout << (string(100, "\n"));
+
+    cout << "Game Over";
+
+    if (p1 == "H") {
+
+        cout << "What's your name?"; cin >> name;
+
+        fstream my_file;
+
+        my_file.open("Maze_" + mazeNum + ".txt");
+
+        myfile << string(name) + " – " + auto duration;
+    }
+
+}
