@@ -2,15 +2,22 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <chrono>
 using namespace std;
 
-int main()
-{
+void display(vector<vector<char>>& maze) {
+    for (int i = 0; i < maze.size(); i++) {
+        for (int j = 0; j < maze[i].size(); j++) {
+            cout << maze[i][j];
+            
+        }
+        cout << endl;
+    } 
 
 
 
-    return 0;
 }
+
 
 void MazeOpened() {
     string mazeNum;
@@ -28,6 +35,7 @@ void MazeOpened() {
             cin.clear();
             cin.ignore(INT_MAX, '\n');
             cin >> mazeNum;
+           
 
             if (!cin.good()) {
 
@@ -44,7 +52,7 @@ void MazeOpened() {
             string playerPos;
             char x;
             int mazeWidth, mazeHeight;
-            int robotsNum;
+            int robotsNum{};
 
             mazeMap >> mazeHeight >> x >> mazeWidth;
 
@@ -54,10 +62,49 @@ void MazeOpened() {
             for (int i = 0; i < mazeHeight; i++) {
                 getline(mazeMap, line);
                 for (int j = 0; j < mazeWidth; j++) {
-
+                    mazeMap >> maze[i][j];
+                    if (maze[i][j] == 'R') {
+                        robotsNum++;
+                    }
+                    else if (maze[i][j] == 'H') {
+                        playerPos = to_string(i) + "" + to_string(j);
+                    }
                 }
             }
+            display(maze);
+
+            mazeMap.close();
+            vector<string> robots(robotsNum + 1);
+            int robotID = 1;
+            for (int i = 0; i < mazeHeight; i++) {
+                for (int j = 0; j < mazeWidth; j++) {
+                    if (maze[i][j] == 'R') {
+                        robots[robotID] = to_string(i) + "" + to_string(j);
+                        robotID++;
+                    }
+                }
+            }
+            mazeOpened = true;
+            auto start = std::chrono::high_resolution_clock::now();
+            //play(maze, robots, playerPos, mazeNum);
+
+        }
+        else {
+            cout << "That maze doesn't exist, would you mind trying another one?" << endl;
         }
     }
-
+   
 }
+
+void Play() {
+    
+}
+
+
+int main()
+{
+    MazeOpened();
+
+    return 0;
+}
+

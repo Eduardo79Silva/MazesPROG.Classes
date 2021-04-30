@@ -1,3 +1,4 @@
 ﻿  MazesPROG.cpp
-D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(48,17): warning C4101: 'robotsNum': unreferenced local variable
-  MazesProg2.vcxproj -> D:\GitHubRepositories\MazesPROG\MazesPROG\MazesProg\Debug\MazesProg2.exe
+C:\Users\eduar\OneDrive\Documentos\GitHub\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(9,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\eduar\OneDrive\Documentos\GitHub\MazesPROG\MazesPROG\MazesProg\MazesPROG.cpp(10,27): warning C4018: '<': signed/unsigned mismatch
+  MazesProg2.vcxproj -> C:\Users\eduar\OneDrive\Documentos\GitHub\MazesPROG\MazesPROG\MazesProg\Debug\MazesProg2.exe
