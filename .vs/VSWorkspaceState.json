@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MazesPROG",
+    "\\MazesPROG\\MazesProg",
+    "\\MazesPROG\\MazesProg\\T07_G12",
+    "\\PROG2"
   ],
+  "SelectedNode": "\\PROG2\\Maze.cpp",
   "PreviewInSolutionExplorer": false
 }
