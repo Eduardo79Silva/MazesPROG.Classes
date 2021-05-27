@@ -1,3 +1,4 @@
+using namespace std;
 #include "Game.h"
 
 Game::Game(const string& filename)
