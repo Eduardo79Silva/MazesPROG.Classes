@@ -1,2 +1,6 @@
 PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.25.28610:TargetPlatformVersion=10.0.18362.0:
+<<<<<<< HEAD
 Debug|Win32|D:\GitHubRepositories\MazesPROG.Classes\PROG2\|
+=======
+Debug|Win32|C:\Users\eduar\Source\Repos\Eduardo79Silva\MazesPROG.Classes\PROG2\|
+>>>>>>> 54221722d42a5ee4be72020eb31e15dfd63cca9f

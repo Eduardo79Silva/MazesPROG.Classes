@@ -1,4 +1,3 @@
-using namespace std;
 #pragma once
 #include<iostream>;
 #include<stdio.h>;
@@ -9,7 +8,7 @@ using namespace std;
 
 class Game {
 public:
-	Game(const string& filename);
+	Game(const std::string& filename);
 	// This constructor should initialize the Maze, the vector of Robots, and the Player,
 	// using the chars read from the file
 	bool play(); // implements the game loop; returns true if player wins, false otherwise
@@ -26,6 +25,6 @@ private:
 private:
 	Maze maze;
 	Player player;
-	vector<Robot> robots;
+	std::vector<Robot> robots;
 	//other attributes
 };
